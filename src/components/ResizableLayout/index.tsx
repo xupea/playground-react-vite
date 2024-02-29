@@ -90,10 +90,7 @@ export default function ResizableLayout({
         minSize: childProps.minSize,
         disableResponsive: isDisabledResponsive(childProps),
         isSolid: isSolid(childProps),
-        currentSize:
-          childProps.size ||
-          childProps.defaultSize ||
-          element.getBoundingClientRect()[dimension],
+        currentSize: element.getBoundingClientRect()[dimension],
       });
     });
 
